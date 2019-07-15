@@ -1,0 +1,13 @@
+config:
+  target: 'http://kweightly.carstendev.de:30080'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  defaults:
+    headers:
+      Authorization: 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5UWkdNa0kzUXpsRFFUY3hRekZHTUVOQk1qRkJNMFJFUXpsR05qbENNa0pGUVRSRlJrTTNOQSJ9.eyJpc3MiOiJodHRwczovL2NhcnN0ZW5kZXYuZXUuYXV0aDAuY29tLyIsInN1YiI6Imdvb2dsZS1vYXV0aDJ8MTExNjA5NjkzNzk5OTYzNzUxNTc3IiwiYXVkIjpbImh0dHBzOi8vYXBpL3dlaWdodGx5IiwiaHR0cHM6Ly9jYXJzdGVuZGV2LmV1LmF1dGgwLmNvbS91c2VyaW5mbyJdLCJpYXQiOjE1NjMyMTEwNzIsImV4cCI6MTU2MzIxODI3MiwiYXpwIjoiNXcydXNmcVk2NU1zN0R2VWVKd28yeFJ0TkY5cGxqN1giLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwicGVybWlzc2lvbnMiOlsiYWRkOndlaWdodHMiLCJkZWxldGU6d2VpZ2h0cyIsInJlYWQ6d2VpZ2h0cyJdfQ.aoG3TUxQ2In5aPEEzTVJ3e8IhK27OaRYoFixFrG86C3GRgFXJSyd4BfDDmgU40DMDMp5AILhW_e3Huf5LU9uyYet-AuFv-X2qW9Bg0iplTJBy7aJS7qpH51dwp1iwLY4JTOCsALlNyUDDM_q9g817ug2efuwRLfF1aSlQl7B2o7r7PcFx2xI9eECWVclrfBNaAyMpd0DCrzQyr5EisXm8uhNynRArcLK7afdvkksWUcKf2j1XdJGBarzat2NRuWe74pdBLZmoymCSSgsuhPCE0yohykZqKMaFQAVarjgATGgdd1zIiR3lZwk3TyehEk7Ijqru2L3ssdEoMdQK7xBKg'
+      Accept-Encoding: 'application/gzip'
+scenarios:
+  - flow:
+    - get:
+        url: "/api/weights"
